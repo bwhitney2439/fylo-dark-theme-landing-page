@@ -20,4 +20,48 @@ body {
   font-size: 14px;
   background: #181f2a url("./images/bg-curvy-desktop.svg") no-repeat;
 }
+
+header {
+  padding: 3rem;
+}
+
+header .nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav-bar .nav-bar-links {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  opacity: 0.5;
+}
+
+header .nav-bar .nav-bar-links a {
+  color: white;
+  text-decoration: none;
+}
+
+main .get-started {
+  border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 450px;
+}
+
+main .get-started img {
+  width: 100%;
+}
 /*# sourceMappingURL=index.css.map */

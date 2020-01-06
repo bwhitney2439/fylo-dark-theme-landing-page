@@ -36,3 +36,33 @@ body {
   font-size: 14px;
   background: hsl(218, 28%, 13%) url("./images/bg-curvy-desktop.svg") no-repeat;
 }
+
+header {
+  padding: 3rem;
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-bar-links {
+      width: 250px;
+      display: flex;
+      justify-content: space-between;
+      opacity: 0.5;
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+main {
+  display: flex .get-started {
+    border: 1px solid white;
+    width: 450px;
+    img {
+      width: 100%;
+    }
+  }
+}
