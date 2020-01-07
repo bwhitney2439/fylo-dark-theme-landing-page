@@ -40,10 +40,10 @@ small {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  //   background-color: hsl(217, 28%, 15%);
   background: url("./images/bg-curvy-desktop.svg");
-  background-position: right;
-  background-repeat: no-repeat;
+  background-color: hsl(217, 28%, 15%);
+  background-position: center;
+  background-repeat: repeat-x;
   background-size: cover;
 }
 
