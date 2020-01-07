@@ -76,11 +76,19 @@ main {
 
   .get-started {
     text-align: center;
-    width: 450px;
+    max-width: 750px;
+    margin-bottom: 7rem;
 
     img {
-      width: 100%;
-      z-index: 555;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
     }
 
     button {
@@ -95,13 +103,13 @@ main {
   }
 
   .info-cards {
-    width: 650px;
-
     .row {
       display: flex;
-
+      justify-content: space-between;
+      align-items: center;
       .card {
-        width: 350px;
+        width: 425px;
+        height: 200px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -110,8 +118,10 @@ main {
         padding: 2rem;
 
         img {
-          width: 3rem;
-          margin-bottom: 1rem;
+          margin-bottom: 2rem;
+        }
+        .card-details {
+          // border: 1px solid white;
         }
       }
     }

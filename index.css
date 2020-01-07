@@ -79,12 +79,20 @@ main {
 
 main .get-started {
   text-align: center;
-  width: 450px;
+  max-width: 750px;
+  margin-bottom: 7rem;
 }
 
 main .get-started img {
-  width: 100%;
-  z-index: 555;
+  margin-bottom: 1rem;
+}
+
+main .get-started h2 {
+  margin-bottom: 1rem;
+}
+
+main .get-started p {
+  margin-bottom: 1rem;
 }
 
 main .get-started button {
@@ -98,18 +106,21 @@ main .get-started button {
   outline: none;
 }
 
-main .info-cards {
-  width: 650px;
-}
-
 main .info-cards .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .info-cards .row .card {
-  width: 350px;
+  width: 425px;
+  height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,8 +139,7 @@ main .info-cards .row .card {
 }
 
 main .info-cards .row .card img {
-  width: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 main .stay-productive {
