@@ -13,16 +13,23 @@ h5,
 p,
 small {
   color: white;
+  opacity: 0.8;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  background: #181f2a url("./images/bg-curvy-desktop.svg") no-repeat;
+  background: url("./images/bg-curvy-desktop.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
-  padding: 3rem;
+  padding: 3rem 4rem 3rem 4rem;
 }
 
 header .nav-bar {
@@ -53,15 +60,256 @@ header .nav-bar .nav-bar-links a {
   text-decoration: none;
 }
 
-main .get-started {
-  border: 1px solid white;
+main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .get-started {
+  text-align: center;
   width: 450px;
 }
 
 main .get-started img {
   width: 100%;
+  z-index: 555;
+}
+
+main .get-started button {
+  width: 170px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
+  background-image: linear-gradient(to right, #65e2d9, #339ecc);
+  height: 35px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  outline: none;
+}
+
+main .info-cards {
+  width: 650px;
+}
+
+main .info-cards .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .info-cards .row .card {
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+main .info-cards .row .card img {
+  width: 3rem;
+  margin-bottom: 1rem;
+}
+
+main .stay-productive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1050px;
+}
+
+main .stay-productive .illustration-main {
+  width: 400px;
+}
+
+main .endorsements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: 1050px;
+}
+
+main .endorsements .quotes {
+  position: absolute;
+  top: 0px;
+  left: -5px;
+}
+
+main .endorsements .card {
+  border-radius: 5px;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #202a3c;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+main .endorsements .card:nth-child(1) {
+  margin-right: 1rem;
+}
+
+main .endorsements .card .avatar {
+  padding: 1rem 1rem 0 0;
+}
+
+main .endorsements .card .avatar img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  float: left;
+}
+
+main .early-access-container {
+  position: relative;
+  height: 180px;
+  width: 650px;
+}
+
+main .early-access-container .early-access {
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  width: 650px;
+  background-color: #1c2431;
+  padding: 2rem;
+  text-align: center;
+}
+
+main .early-access-container .early-access .form-container {
+  margin-top: 1.5rem;
+}
+
+main .early-access-container .early-access .form-container input {
+  width: 380px;
+  height: 35px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  padding: 1rem;
+}
+
+main .early-access-container .early-access .form-container button {
+  width: 170px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
+  background-image: linear-gradient(to right, #65e2d9, #339ecc);
+  height: 35px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  margin-left: 1rem;
+}
+
+footer {
+  background-color: #0b1523;
+  padding: 10rem 4rem 3rem 4rem;
+}
+
+footer .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-container .fylo-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 25%;
+}
+
+footer .footer-container .fylo-about .fylo-about-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 1rem;
+}
+
+footer .footer-container .fylo-about .fylo-about-location img {
+  margin-right: 0.5rem;
+}
+
+footer .footer-container .contact-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 50px;
+}
+
+footer .footer-container .contact-details .telephone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-container .contact-details .telephone img {
+  margin-right: 1rem;
+}
+
+footer .footer-container .contact-details .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-container .contact-details .email img {
+  margin-right: 1rem;
 }
 /*# sourceMappingURL=index.css.map */
