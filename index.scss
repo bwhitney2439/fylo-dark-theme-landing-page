@@ -442,17 +442,13 @@ footer {
       display: flex;
       justify-content: center;
       height: 310px;
-      // border: 1px solid white;
 
       .early-access {
         position: absolute;
         width: 90%;
         background-color: hsl(217, 28%, 15%);
-        // height: 100%;
 
         .form-container {
-          // display: unset;
-
           input {
             width: 100%;
             margin-bottom: 1rem;
@@ -469,7 +465,6 @@ footer {
 
   footer {
     padding: 3rem;
-    // margin-top: 20rem;
     img {
       margin-top: 10rem;
       margin-bottom: 2rem;
