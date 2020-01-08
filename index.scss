@@ -27,14 +27,17 @@ $cyan-to-blue-gradient: linear-gradient(to right, $cyan, $blue);
 
 h1,
 h2,
+h3,
 h5,
 p,
+a,
 small {
   color: $white;
   opacity: 0.8;
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
   letter-spacing: 0.5px;
+  text-decoration: none;
 }
 
 body {
@@ -83,7 +86,7 @@ main {
       margin-bottom: 1rem;
     }
 
-    h2 {
+    h1 {
       margin-bottom: 1rem;
     }
 
@@ -103,10 +106,12 @@ main {
   }
 
   .info-cards {
+    margin-bottom: 4rem;
     .row {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin-bottom: 3rem;
       .card {
         width: 425px;
         height: 200px;
@@ -120,20 +125,47 @@ main {
         img {
           margin-bottom: 2rem;
         }
-        .card-details {
-          // border: 1px solid white;
-        }
       }
     }
   }
 
   .stay-productive {
+    margin-bottom: 4rem;
     display: flex;
     align-items: center;
-    width: 1050px;
+    width: 1024px;
 
     .illustration-main {
       width: 400px;
+      margin-right: 3rem;
+    }
+
+    .stay-productive-content {
+      h2 {
+        margin-bottom: 1rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+      }
+
+      .stay-productive-link {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        border-bottom: 1px solid $cyan;
+        width: fit-content;
+
+        a {
+          text-align: start;
+          color: $cyan;
+          margin-right: 0.3rem;
+
+          img {
+            padding-top: 1rem;
+          }
+        }
+      }
     }
   }
 
@@ -141,7 +173,7 @@ main {
     display: flex;
     position: relative;
     align-items: start;
-    width: 1050px;
+    width: 1024px;
 
     .quotes {
       position: absolute;
@@ -157,11 +189,9 @@ main {
       background-color: hsl(219, 30%, 18%);
       margin-top: 2rem;
       margin-bottom: 2rem;
-      padding: 2rem;
-
-      &:nth-child(1) {
-        margin-right: 1rem;
-      }
+      padding: 2rem 1rem;
+      margin-right: 1rem;
+      height: 200px;
 
       .avatar {
         padding: 1rem 1rem 0 0;
@@ -222,21 +252,19 @@ footer {
 
   .footer-container {
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
-    align-items: center;
+    margin-top: 1rem;
 
     .fylo-about {
       display: flex;
-      flex-direction: column;
       align-items: flex-start;
-      width: 25%;
-      .fylo-about-location {
-        display: flex;
-        align-items: flex-start;
-        margin-top: 1rem;
-        img {
-          margin-right: 0.5rem;
-        }
+      margin-right: 5rem;
+      // width: 30%;
+
+      img {
+        margin-right: 0.5rem;
+        margin-top: 0.3rem;
       }
     }
 
@@ -244,20 +272,192 @@ footer {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      margin-right: 8rem;
 
-      height: 50px;
-      .telephone {
+      .contact-details-item {
         display: flex;
-        img {
-          margin-right: 1rem;
-        }
-      }
-      .email {
-        display: flex;
+        margin-bottom: 1rem;
+
         img {
           margin-right: 1rem;
         }
       }
     }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+
+      margin-right: 5rem;
+      width: 180px;
+
+      a {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .fa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        text-decoration: none;
+        margin-right: 1rem;
+        border-radius: 50%;
+        opacity: 0.8;
+        transition: all 0.3s;
+
+        &:nth-child(3) {
+          margin-right: unset;
+        }
+      }
+
+      .fa:hover {
+        color: $cyan;
+        border: 1px solid $cyan;
+      }
+
+      .fa-facebook {
+        background: transparent;
+        border: 1px solid $white;
+        color: white;
+      }
+
+      .fa-twitter {
+        background: transparent;
+        color: white;
+        border: 1px solid $white;
+      }
+
+      .fa-instagram {
+        background: transparent;
+        color: white;
+        border: 1px solid $white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 675px) {
+  header {
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 3rem;
+    .nav-bar {
+      width: 100%;
+      img {
+        width: 64px;
+      }
+
+      .nav-bar-links {
+        width: unset;
+
+        a {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+
+  main {
+    .get-started {
+      width: 100vw;
+      padding: 0 3rem;
+      margin-bottom: 3rem;
+      img {
+        width: 100%;
+      }
+    }
+
+    .info-cards {
+      padding: 3rem;
+      margin-bottom: unset;
+      .row {
+        display: unset;
+
+        .card {
+          width: unset;
+          height: unset;
+          padding: unset;
+          margin-bottom: 5rem;
+
+          &:nth-child(3) {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+
+    .stay-productive {
+      padding: 3rem;
+      display: unset;
+      width: 100%;
+
+      .illustration-main {
+        width: 100%;
+        margin-right: unset;
+      }
+    }
+
+    .endorsements {
+      display: unset;
+      width: 100%;
+      padding: 3rem;
+
+      .quotes {
+        left: 3rem;
+        top: 1rem;
+        z-index: -999;
+      }
+
+      .card {
+        margin: unset;
+        margin-bottom: 1.5rem;
+        height: fit-content;
+        padding: 1.5rem 1rem;
+
+        &:nth-child(4) {
+          margin-bottom: unset;
+        }
+      }
+    }
+
+    .early-access-container {
+      padding: unset;
+      width: 100%;
+
+      .early-access {
+        padding: 1rem;
+        top: 50%;
+        width: 100%;
+
+        .form-container {
+          // display: unset;
+
+          input {
+            width: 100%;
+            margin-bottom: 1rem;
+          }
+
+          button {
+            width: 100%;
+            margin-left: unset;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    padding: unset;
   }
 }

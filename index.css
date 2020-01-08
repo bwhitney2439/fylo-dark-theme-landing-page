@@ -9,14 +9,17 @@
 
 h1,
 h2,
+h3,
 h5,
 p,
+a,
 small {
   color: white;
   opacity: 0.8;
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
   letter-spacing: 0.5px;
+  text-decoration: none;
 }
 
 body {
@@ -87,7 +90,7 @@ main .get-started img {
   margin-bottom: 1rem;
 }
 
-main .get-started h2 {
+main .get-started h1 {
   margin-bottom: 1rem;
 }
 
@@ -106,6 +109,10 @@ main .get-started button {
   outline: none;
 }
 
+main .info-cards {
+  margin-bottom: 4rem;
+}
+
 main .info-cards .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -116,6 +123,7 @@ main .info-cards .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 3rem;
 }
 
 main .info-cards .row .card {
@@ -143,17 +151,53 @@ main .info-cards .row .card img {
 }
 
 main .stay-productive {
+  margin-bottom: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1050px;
+  width: 1024px;
 }
 
 main .stay-productive .illustration-main {
   width: 400px;
+  margin-right: 3rem;
+}
+
+main .stay-productive .stay-productive-content h2 {
+  margin-bottom: 1rem;
+}
+
+main .stay-productive .stay-productive-content p {
+  margin-bottom: 1rem;
+}
+
+main .stay-productive .stay-productive-content .stay-productive-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #65e2d9;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+main .stay-productive .stay-productive-content .stay-productive-link a {
+  text-align: start;
+  color: #65e2d9;
+  margin-right: 0.3rem;
+}
+
+main .stay-productive .stay-productive-content .stay-productive-link a img {
+  padding-top: 1rem;
 }
 
 main .endorsements {
@@ -164,7 +208,7 @@ main .endorsements {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  width: 1050px;
+  width: 1024px;
 }
 
 main .endorsements .quotes {
@@ -186,11 +230,9 @@ main .endorsements .card {
   background-color: #202a3c;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  padding: 2rem;
-}
-
-main .endorsements .card:nth-child(1) {
+  padding: 2rem 1rem;
   margin-right: 1rem;
+  height: 200px;
 }
 
 main .endorsements .card .avatar {
@@ -254,40 +296,28 @@ footer .footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-top: 1rem;
 }
 
 footer .footer-container .fylo-about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 25%;
+  margin-right: 5rem;
 }
 
-footer .footer-container .fylo-about .fylo-about-location {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-top: 1rem;
-}
-
-footer .footer-container .fylo-about .fylo-about-location img {
+footer .footer-container .fylo-about img {
   margin-right: 0.5rem;
+  margin-top: 0.3rem;
 }
 
 footer .footer-container .contact-details {
@@ -301,26 +331,191 @@ footer .footer-container .contact-details {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 50px;
+  margin-right: 8rem;
 }
 
-footer .footer-container .contact-details .telephone {
+footer .footer-container .contact-details .contact-details-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 1rem;
 }
 
-footer .footer-container .contact-details .telephone img {
+footer .footer-container .contact-details .contact-details-item img {
   margin-right: 1rem;
 }
 
-footer .footer-container .contact-details .email {
+footer .footer-container .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-right: 5rem;
+  width: 180px;
 }
 
-footer .footer-container .contact-details .email img {
+footer .footer-container .links a {
+  margin-bottom: 0.5rem;
+}
+
+footer .footer-container .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .footer-container .social-icons .fa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
   margin-right: 1rem;
+  border-radius: 50%;
+  opacity: 0.8;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+footer .footer-container .social-icons .fa:nth-child(3) {
+  margin-right: unset;
+}
+
+footer .footer-container .social-icons .fa:hover {
+  color: #65e2d9;
+  border: 1px solid #65e2d9;
+}
+
+footer .footer-container .social-icons .fa-facebook {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+footer .footer-container .social-icons .fa-twitter {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+footer .footer-container .social-icons .fa-instagram {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+@media screen and (max-width: 675px) {
+  header {
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  header .nav-bar {
+    width: 100%;
+  }
+  header .nav-bar img {
+    width: 64px;
+  }
+  header .nav-bar .nav-bar-links {
+    width: unset;
+  }
+  header .nav-bar .nav-bar-links a {
+    margin-right: 1rem;
+  }
+  main .get-started {
+    width: 100vw;
+    padding: 0 3rem;
+    margin-bottom: 3rem;
+  }
+  main .get-started img {
+    width: 100%;
+  }
+  main .info-cards {
+    padding: 3rem;
+    margin-bottom: unset;
+  }
+  main .info-cards .row {
+    display: unset;
+  }
+  main .info-cards .row .card {
+    width: unset;
+    height: unset;
+    padding: unset;
+    margin-bottom: 5rem;
+  }
+  main .info-cards .row .card:nth-child(3) {
+    margin-bottom: 0px;
+  }
+  main .stay-productive {
+    padding: 3rem;
+    display: unset;
+    width: 100%;
+  }
+  main .stay-productive .illustration-main {
+    width: 100%;
+    margin-right: unset;
+  }
+  main .endorsements {
+    display: unset;
+    width: 100%;
+    padding: 3rem;
+  }
+  main .endorsements .quotes {
+    left: 3rem;
+    top: 1rem;
+    z-index: -999;
+  }
+  main .endorsements .card {
+    margin: unset;
+    margin-bottom: 1.5rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1.5rem 1rem;
+  }
+  main .endorsements .card:nth-child(4) {
+    margin-bottom: unset;
+  }
+  main .early-access-container {
+    padding: unset;
+    width: 100%;
+  }
+  main .early-access-container .early-access {
+    padding: 1rem;
+    top: 50%;
+    width: 100%;
+  }
+  main .early-access-container .early-access .form-container input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  main .early-access-container .early-access .form-container button {
+    width: 100%;
+    margin-left: unset;
+  }
+  footer {
+    padding: unset;
+  }
 }
 /*# sourceMappingURL=index.css.map */
