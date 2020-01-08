@@ -433,12 +433,14 @@ footer {
 
     .early-access-container {
       padding: unset;
-      width: 100%;
+      width: 100vw;
+      height: fit-content;
+      padding: 1rem;
 
       .early-access {
-        padding: 1rem;
-        top: 50%;
+        // top: 50%;
         width: 100%;
+        // padding: 0.5rem;
 
         .form-container {
           // display: unset;
@@ -458,6 +460,10 @@ footer {
   }
 
   footer {
-    padding: unset;
+    padding: 3rem;
+    margin-top: 20rem;
+    .footer-container {
+      display: unset;
+    }
   }
 }
