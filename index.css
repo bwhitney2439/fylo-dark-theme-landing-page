@@ -27,8 +27,7 @@ body {
   font-size: 14px;
   background: url("./images/bg-curvy-desktop.svg");
   background-color: #1c2431;
-  background-position: center;
-  background-repeat: repeat-x;
+  background-position: center top;
   background-size: cover;
 }
 
@@ -159,6 +158,7 @@ main .stay-productive {
       -ms-flex-align: center;
           align-items: center;
   width: 1024px;
+  background-color: 218, 28%, 13%;
 }
 
 main .stay-productive .illustration-main {
@@ -426,6 +426,12 @@ footer .footer-container .social-icons .fa-instagram {
 }
 
 @media screen and (max-width: 675px) {
+  body {
+    background: url("./images/bg-curvy-mobile.svg");
+    background-color: #1c2431;
+    background-position: center top;
+    background-size: cover;
+  }
   header {
     padding: 1rem;
     width: 100%;
@@ -444,15 +450,15 @@ footer .footer-container .social-icons .fa-instagram {
     margin-right: 1rem;
   }
   main .get-started {
-    width: 100vw;
-    padding: 0 3rem;
+    width: 100%;
+    padding: 0 2rem;
     margin-bottom: 3rem;
   }
   main .get-started img {
     width: 100%;
   }
   main .info-cards {
-    padding: 3rem;
+    padding: 2rem;
     margin-bottom: unset;
   }
   main .info-cards .row {
@@ -468,7 +474,7 @@ footer .footer-container .social-icons .fa-instagram {
     margin-bottom: 0px;
   }
   main .stay-productive {
-    padding: 3rem;
+    padding: 2rem;
     display: unset;
     width: 100%;
   }
@@ -479,11 +485,11 @@ footer .footer-container .social-icons .fa-instagram {
   main .endorsements {
     display: unset;
     width: 100%;
-    padding: 3rem;
+    padding: 2rem;
   }
   main .endorsements .quotes {
     left: 3rem;
-    top: 1rem;
+    top: 0rem;
     z-index: -999;
   }
   main .endorsements .card {
@@ -498,15 +504,19 @@ footer .footer-container .social-icons .fa-instagram {
     margin-bottom: unset;
   }
   main .early-access-container {
-    padding: unset;
-    width: 100vw;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    padding: 1rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 310px;
   }
   main .early-access-container .early-access {
-    width: 100%;
+    position: absolute;
+    width: 90%;
+    background-color: #1c2431;
   }
   main .early-access-container .early-access .form-container input {
     width: 100%;
@@ -518,10 +528,37 @@ footer .footer-container .social-icons .fa-instagram {
   }
   footer {
     padding: 3rem;
-    margin-top: 20rem;
+  }
+  footer img {
+    margin-top: 10rem;
+    margin-bottom: 2rem;
   }
   footer .footer-container {
     display: unset;
+  }
+  footer .footer-container .fylo-about {
+    margin: unset;
+    margin-bottom: 1rem;
+  }
+  footer .footer-container .contact-details {
+    margin: unset;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    margin-bottom: 5rem;
+  }
+  footer .footer-container .contact-details .contact-details-item img {
+    margin: unset;
+    margin-right: 1rem;
+  }
+  footer .footer-container .links {
+    margin: unset;
+    margin-bottom: 3rem;
+  }
+  footer .footer-container .social-icons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=index.css.map */

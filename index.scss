@@ -45,8 +45,7 @@ body {
   font-size: 14px;
   background: url("./images/bg-curvy-desktop.svg");
   background-color: hsl(217, 28%, 15%);
-  background-position: center;
-  background-repeat: repeat-x;
+  background-position: center top;
   background-size: cover;
 }
 
@@ -134,7 +133,7 @@ main {
     display: flex;
     align-items: center;
     width: 1024px;
-
+    background-color: (218, 28%, 13%);
     .illustration-main {
       width: 400px;
       margin-right: 3rem;
@@ -348,6 +347,13 @@ footer {
 }
 
 @media screen and (max-width: 675px) {
+  body {
+    background: url("./images/bg-curvy-mobile.svg");
+    background-color: hsl(217, 28%, 15%);
+    background-position: center top;
+    background-size: cover;
+  }
+
   header {
     padding: 1rem;
     width: 100%;
@@ -370,8 +376,8 @@ footer {
 
   main {
     .get-started {
-      width: 100vw;
-      padding: 0 3rem;
+      width: 100%;
+      padding: 0 2rem;
       margin-bottom: 3rem;
       img {
         width: 100%;
@@ -379,7 +385,7 @@ footer {
     }
 
     .info-cards {
-      padding: 3rem;
+      padding: 2rem;
       margin-bottom: unset;
       .row {
         display: unset;
@@ -398,7 +404,7 @@ footer {
     }
 
     .stay-productive {
-      padding: 3rem;
+      padding: 2rem;
       display: unset;
       width: 100%;
 
@@ -411,11 +417,11 @@ footer {
     .endorsements {
       display: unset;
       width: 100%;
-      padding: 3rem;
+      padding: 2rem;
 
       .quotes {
         left: 3rem;
-        top: 1rem;
+        top: 0rem;
         z-index: -999;
       }
 
@@ -432,15 +438,17 @@ footer {
     }
 
     .early-access-container {
-      padding: unset;
-      width: 100vw;
-      height: fit-content;
-      padding: 1rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      height: 310px;
+      // border: 1px solid white;
 
       .early-access {
-        // top: 50%;
-        width: 100%;
-        // padding: 0.5rem;
+        position: absolute;
+        width: 90%;
+        background-color: hsl(217, 28%, 15%);
+        // height: 100%;
 
         .form-container {
           // display: unset;
@@ -461,9 +469,40 @@ footer {
 
   footer {
     padding: 3rem;
-    margin-top: 20rem;
+    // margin-top: 20rem;
+    img {
+      margin-top: 10rem;
+      margin-bottom: 2rem;
+    }
     .footer-container {
       display: unset;
+
+      .fylo-about {
+        margin: unset;
+        margin-bottom: 1rem;
+      }
+
+      .contact-details {
+        margin: unset;
+        justify-content: unset;
+
+        margin-bottom: 5rem;
+        .contact-details-item {
+          img {
+            margin: unset;
+            margin-right: 1rem;
+          }
+        }
+      }
+
+      .links {
+        margin: unset;
+        margin-bottom: 3rem;
+      }
+
+      .social-icons {
+        justify-content: center;
+      }
     }
   }
 }
